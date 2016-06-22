@@ -11,7 +11,9 @@
 This java project is built using [gradle] (https://gradle.org/getting-started-gradle-java/). 
 It uses JUnit 4.12 and [Mockito] (http://mockito.org/) for unit testing.
 
-To execute, clone git repository and run ./gradlew run as shown below:
+Clone git repository 
+To run unit tests execute ./gradlew test
+To run the application execute ./gradlew run as shown below:
 
 
     ./gradlew run
