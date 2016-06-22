@@ -33,6 +33,5 @@ It uses JUnit 4.12 and Mockito for unit testing.
     BUILD SUCCESSFUL
     Total time: 6.388 secs
     
-Inline-style: 
 ![alt text](https://github.com/utkarsha1/prime-multiplication/blob/master/Screen%20Shot%202016-06-21%20at%2011.56.47%20PM.png "Sample Run")
 

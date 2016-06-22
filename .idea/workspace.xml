@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6046b9fb-cb7d-4f64-8eda-ebcc2d410273" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="prime-challenge.iws" />
@@ -101,8 +100,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84615386">
-              <caret line="36" column="137" selection-start-line="36" selection-start-column="137" selection-end-line="36" selection-end-column="137" />
+            <state vertical-scroll-proportion="0.7762238">
+              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -1407,7 +1406,7 @@
       <workItem from="1466532545392" duration="2564000" />
       <workItem from="1466545532093" duration="1344000" />
       <workItem from="1466561998174" duration="1874000" />
-      <workItem from="1466564054908" duration="13815000" />
+      <workItem from="1466564054908" duration="13869000" />
     </task>
     <servers />
   </component>
@@ -1444,7 +1443,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39504000" />
+    <option name="totallyTimeSpent" value="39558000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-24" y="69" width="1440" height="821" extended-state="0" />
@@ -1959,8 +1958,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84615386">
-          <caret line="36" column="137" selection-start-line="36" selection-start-column="137" selection-end-line="36" selection-end-column="137" />
+        <state vertical-scroll-proportion="0.7762238">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
           <folding />
         </state>
       </provider>
