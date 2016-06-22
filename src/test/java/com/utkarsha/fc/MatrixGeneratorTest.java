@@ -7,6 +7,8 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertArrayEquals;
 
 
@@ -66,7 +68,7 @@ public class MatrixGeneratorTest {
     public void givenEmptyInputList_generatedMatrixIsAsExpected() throws PrimeChallengeException {
         int[][] expected = new int[][]{{0}};
 
-        int[][] actual = underTest.build2X2MultiplierMatrix(Lists.newArrayList());
+        int[][] actual = underTest.build2X2MultiplierMatrix(new ArrayList<Integer>());
         assertArrayEquals(expected, actual);
     }
 
