@@ -1,19 +1,16 @@
 package com.utkarsha.fc;
+import com.google.common.collect.Lists;
 import com.utkarsha.fc.exception.PrimeChallengeException;
 import com.utkarsha.fc.util.PrimeNumberGenerator;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
-import org.junit.runner.RunWith;
-import org.mockito.runners.MockitoJUnitRunner;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 /**
  * @author utkarsha.padhye on 6/20/16
  */
-@RunWith(MockitoJUnitRunner.class)
 public class PrimeNumberGeneratorTest {
 
     @Rule
@@ -68,6 +65,26 @@ public class PrimeNumberGeneratorTest {
     @Test
     public void whenInputIsLargestSevenDigitPrimeNumber_verifyTrue() throws PrimeChallengeException {
         assertTrue(underTest.isPrime(6700417));
+    }
+
+    @Test
+    public void whenGetNPrimeNumbers_andN5_returnsExpectedList() throws PrimeChallengeException {
+        assertEquals(Lists.newArrayList(2, 3, 5, 7, 11) , underTest.getNPrimeNumbers(5));
+    }
+
+    @Test
+    public void whenGetNPrimeNumbers_andN1_returnsExpectedList() throws PrimeChallengeException {
+        assertEquals(Lists.newArrayList(2) , underTest.getNPrimeNumbers(1));
+    }
+
+    @Test
+    public void whenGetNPrimeNumbers_andN0_returnsExpectedList() throws PrimeChallengeException {
+        assertEquals(Lists.newArrayList() , underTest.getNPrimeNumbers(0));
+    }
+
+    @Test
+    public void whenGetNPrimeNumbers_andNMinusOne_returnsExpectedList() throws PrimeChallengeException {
+        assertEquals(Lists.newArrayList() , underTest.getNPrimeNumbers(-1));
     }
 
 }

@@ -2,6 +2,7 @@ package com.utkarsha.fc.util;
 
 import com.utkarsha.fc.exception.PrimeChallengeException;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -29,18 +30,22 @@ public class MatrixGenerator {
             throw new PrimeChallengeException("Error determining prime numbers to generate multiplication matrix");
         }
         int size = numbers.size();
-        int [][] multiplierArray = new int[size][size];
+        int [][] multiplierArray = new int[size + 1][size + 1];
 
-        for (int rowCounter = 0; rowCounter < size; rowCounter++) {
-            for(int columnCounter = 0; columnCounter < size; columnCounter++) {
-                if(rowCounter == 0) {
-                    multiplierArray[rowCounter][columnCounter] = numbers.get(columnCounter);
-                } else if(columnCounter == 0) {
-                    multiplierArray[rowCounter][columnCounter] = numbers.get(rowCounter);
-                }
-                else {
-                    multiplierArray[rowCounter][columnCounter] = numbers.get(rowCounter) * numbers.get(columnCounter);
-                }
+        multiplierArray[0][0] = 0;
+
+        for(int rowCounter = 0; rowCounter < size ; rowCounter++) {
+            multiplierArray[0][rowCounter + 1] = numbers.get(rowCounter);
+        }
+
+        for(int columnCounter = 0; columnCounter < size ; columnCounter++) {
+            multiplierArray[columnCounter + 1][0] = numbers.get(columnCounter);
+        }
+
+        for (int rowCounter = 1; rowCounter <= size; rowCounter++) {
+            for(int columnCounter = 1; columnCounter <= size; columnCounter++) {
+                multiplierArray[rowCounter][columnCounter] = numbers.get(rowCounter - 1) * numbers.get(columnCounter - 1);
+
             }
         }
         return multiplierArray;
