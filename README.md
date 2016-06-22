@@ -2,13 +2,16 @@
 
 ### Objective
 
->Write a program that prints out a multiplication table of the first 10 prime numbers. 
->The program must run from the command line and print one table to STDOUT.
->The first row and column of the table should have the 10 primes, with
+>Write a program that prints out a multiplication table of the n prime numbers. 
+>Get n as user input.
+>The program runs from the command line and prints the multiplication table to STDOUT.
+>The first row and column of the table should have the n primes, with
 >each cell containing the product of the primes for the corresponding row and column.
 
 This java project is built using [gradle] (https://gradle.org/getting-started-gradle-java/). 
-It uses JUnit 4.12 and Mockito for unit testing.
+It uses JUnit 4.12 and [Mockito] (http://mockito.org/) for unit testing.
+
+To execute, clone git repository and run ./gradlew run as shown below:
 
 
     ./gradlew run
