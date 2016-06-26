@@ -20,8 +20,8 @@ import static org.junit.Assert.assertEquals;
 public class IntegerInputGetterTest {
 
     @Rule
-    public ExpectedException thrown = ExpectedException.none();
-    private IntegerInputGetter underTest = new IntegerInputGetter();
+    public final ExpectedException thrown = ExpectedException.none();
+    private final IntegerInputGetter underTest = new IntegerInputGetter();
 
     @Test
     public void whenUserInputsStringNumber_thenReturnIntegerEquivalent() throws PrimeChallengeException {
@@ -59,7 +59,7 @@ public class IntegerInputGetterTest {
     }
 
     @Test
-    public void whenUserInputsSpecialChracters_thenReturnsAppropriateException() throws PrimeChallengeException {
+    public void whenUserInputsSpecialCharacters_thenReturnsAppropriateException() throws PrimeChallengeException {
         String input = "@#$&*%";
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);

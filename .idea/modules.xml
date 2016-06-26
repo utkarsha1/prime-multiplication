@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/prime-challenge.iml" filepath="$PROJECT_DIR$/prime-challenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/prime-challenge.iml" filepath="$PROJECT_DIR$/.idea/modules/prime-challenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/prime-challenge_main.iml" filepath="$PROJECT_DIR$/.idea/modules/prime-challenge_main.iml" group="prime-challenge" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/prime-challenge_test.iml" filepath="$PROJECT_DIR$/.idea/modules/prime-challenge_test.iml" group="prime-challenge" />
     </modules>
   </component>
 </project>

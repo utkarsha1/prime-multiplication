@@ -2,28 +2,12 @@ package com.utkarsha.fc.util;
 
 import com.utkarsha.fc.exception.PrimeChallengeException;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
 /**
  * @author utkarsha.padhye on 6/20/16
  */
 public class MatrixGenerator {
-
-    private static final Logger log = Logger.getLogger(MatrixGenerator.class.getName());
-
-
-    public void printArray(int[][] matrix) {
-        int size = matrix.length;
-        for (int rowCounter = 0; rowCounter < size; rowCounter++) {
-            for (int columnCounter = 0; columnCounter < size; columnCounter++) {
-                System.out.print(matrix[rowCounter][columnCounter] + " ");
-            }
-            System.out.println();
-        }
-
-    }
 
     public int[][] build2X2MultiplierMatrix(List<Integer> numbers) throws PrimeChallengeException {
         if(numbers == null) {

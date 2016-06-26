@@ -18,9 +18,9 @@ import static org.junit.Assert.assertArrayEquals;
 public class MatrixGeneratorTest {
 
     @Rule
-    public ExpectedException thrown = ExpectedException.none();
+    public final ExpectedException thrown = ExpectedException.none();
 
-    private MatrixGenerator underTest = new MatrixGenerator();
+    private final MatrixGenerator underTest = new MatrixGenerator();
 
     @Test
     public void givenInputList_generatedMatrixIsAsExpected() throws PrimeChallengeException {
@@ -68,7 +68,7 @@ public class MatrixGeneratorTest {
     public void givenEmptyInputList_generatedMatrixIsAsExpected() throws PrimeChallengeException {
         int[][] expected = new int[][]{{0}};
 
-        int[][] actual = underTest.build2X2MultiplierMatrix(new ArrayList<Integer>());
+        int[][] actual = underTest.build2X2MultiplierMatrix(new ArrayList<>());
         assertArrayEquals(expected, actual);
     }
 
