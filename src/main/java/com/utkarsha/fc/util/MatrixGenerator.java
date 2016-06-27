@@ -18,12 +18,10 @@ public class MatrixGenerator {
 
         multiplierArray[0][0] = 0;
 
-        for(int rowCounter = 0; rowCounter < size ; rowCounter++) {
-            multiplierArray[0][rowCounter + 1] = numbers.get(rowCounter);
-        }
-
-        for(int columnCounter = 0; columnCounter < size ; columnCounter++) {
-            multiplierArray[columnCounter + 1][0] = numbers.get(columnCounter);
+        for(int counter = 0; counter < size ; counter++) {
+            int number = numbers.get(counter);
+            multiplierArray[0][counter + 1] = number;
+            multiplierArray[counter + 1][0] = number;
         }
 
         for (int rowCounter = 1; rowCounter <= size; rowCounter++) {

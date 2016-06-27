@@ -5,9 +5,6 @@ import com.utkarsha.fc.util.IntegerInputGetter;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
-import org.junit.runner.RunWith;
-import org.mockito.runners.MockitoJUnitRunner;
-
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
@@ -16,7 +13,6 @@ import static org.junit.Assert.assertEquals;
 /**
  * @author utkarsha.padhye on 6/20/16
  */
-@RunWith(MockitoJUnitRunner.class)
 public class IntegerInputGetterTest {
 
     @Rule

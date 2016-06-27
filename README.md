@@ -9,7 +9,7 @@
 >each cell containing the product of the primes for the corresponding row and column.
 
 This java project is built using [gradle] (https://gradle.org/getting-started-gradle-java/). 
-It uses JUnit 4.12 and [Mockito] (http://mockito.org/) for unit testing.
+It uses JUnit 4.12 for unit testing.
 
 Clone git repository 
 To run unit tests execute ./gradlew test
